@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
   end
   
   def activate_student
+<<<<<<< HEAD
     student = set_student
     if student.active
       student.active = false
@@ -19,6 +20,9 @@ class StudentsController < ApplicationController
     student.save
     
     redirect_to "/students/#{student.id}"
+=======
+    set_student.active = true
+>>>>>>> 034bb165170419019c3986bf9f0f4ba180089c84
   end
 
   private
